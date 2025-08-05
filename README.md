@@ -13,6 +13,6 @@ pip install -r reuqirements.txt   komutu ile web3 kütüphanesini kuralım
 bir tanesine 'python claim_icn.py'
 diğerine 'python send_icn.py'
 
-yaz bunlar döngüde sürekli beklerken çalınan cüzdanına fee için bir miktar eth yolla
+bunları çalıştırdıktan sonra döngüde sürekli işlemleri deneyecek taa ki sen çalınan cüzdanının içinde ufak bir miktar eth fee attığında  işlemleri gerçekleştirinceye kadar
 
 umarım başarılı olur.
