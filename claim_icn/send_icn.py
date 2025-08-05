@@ -14,8 +14,8 @@ account = web3.eth.account.from_key(private_key)
 token_contract_address = "0xE0Cd4cAcDdcBF4f36e845407CE53E87717b6601d"
 token_contract = web3.eth.contract(address=web3.to_checksum_address(token_contract_address), abi=ABI)
 
-# Aşağıdaki linke tıkla son işlemlerden biriniz transaction hashini kopyala gas ve gas price için referans
-# ttps://basescan.org/advanced-filter?tkn=0xE0Cd4cAcDdcBF4f36e845407CE53E87717b6601d&txntype=2&mtd=0xa9059cbb%7eTransfer
+# Aşağıdaki linke tıkla son işlemlerden birinin transaction hashini kopyala gas ve gas price için referans
+# https://basescan.org/advanced-filter?tkn=0xE0Cd4cAcDdcBF4f36e845407CE53E87717b6601d&txntype=2&mtd=0xa9059cbb%7eTransfer
 txn_hash = ""
 
 transaction = web3.eth.get_transaction(txn_hash)
@@ -50,4 +50,5 @@ if __name__ == "__main__":
             with open("error.txt", "a") as file:
                 file.write(str(e) + "\n")
       
+
       
